@@ -1,0 +1,13 @@
+def facto(n):
+    if n < 0:
+        return 'Factorial cannot be computed for negative numbers'
+    if n == 0:
+        return 1
+    if n == 1:
+        return 1
+    else:
+        return n * facto(n-1)
+
+
+if __name__ == '__main__':
+    print(facto(-5))
